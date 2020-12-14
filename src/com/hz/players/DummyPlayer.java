@@ -1,7 +1,5 @@
 package com.hz.players;
 
-import com.hz.players.TicTacToe;
-
 public class DummyPlayer implements TicTacToe {
 
     private int symbol;
@@ -31,9 +29,9 @@ public class DummyPlayer implements TicTacToe {
 
         // 'First comes, first served' algorithm
         for(int i=0; i<9; i++) {
-            int coordinate = this.state[i];
+            int value = this.state[i];
 
-            if(coordinate == -1) {
+            if(value == -1) {
                 this.state[i] = this.symbol;
                 break;
             }
